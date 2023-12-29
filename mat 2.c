@@ -1,0 +1,24 @@
+/*Escreva um programa que alimente uma matriz M de 2 x 3 elementos inteiros e, utilizando estruturas
+de repetição, apresente na tela o produto de todos os elementos da matriz.
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int matriz[2][3] = {{2, 4, 6}, {1, 3, 5}}, i, j, multi = 1;
+
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            // printf("matriz[%d][%d]: ", i, j);
+            // scanf("%d", &matriz[i][j]);
+
+            multi *= matriz[i][j];
+        }
+    }
+
+    printf("a soma de tudo e: %d", multi);
+    return 0;
+}
